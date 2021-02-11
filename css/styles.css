@@ -1,0 +1,212 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Lato,Helvetica,Arial,sans-serif;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.main-subtitle {
+	font-family: Linux Libertine,Georgia,Times,serif;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.main-content {
+	width: 100%;
+	max-width: 600px;
+	background: url('../images/logo_wikipedia.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	margin: 20px auto;
+    display: grid;
+	grid-gap: 35px 0;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.main-content-language {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+a.language {
+	text-decoration: none;
+}
+a.language:hover strong{
+	text-decoration: underline;
+}
+.main-content-language .language strong {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	color: #36c;
+	
+	text-align: center;
+}
+.main-content-language .language small {
+	display: block;
+	color: #54595d;
+	text-align: center;
+	font-size: 13px;
+}
+.grid-column-1-4x {
+	grid-column: 1 / 5;	
+}
+.grid-column-4-4x {
+	grid-column: 5 / 9;	
+}
+
+.grid-column-1-3x {
+	grid-column: 1 / 4;	
+}
+.grid-column-5-3x {
+	grid-column: 6 / 9;	
+}
+
+.grid-column-1-2x {
+	grid-column: 1 / 3;
+}
+
+.grid-column-6-2x {
+	grid-column: 7 / 9;
+}
+
+.grid-row-1 {
+	grid-row: 1;
+}
+
+.grid-row-2 {
+	grid-row: 2;
+}
+
+.grid-row-3 {
+	grid-row: 3;
+}
+
+.grid-row-4 {
+	grid-row: 4;
+}
+
+.grid-row-5 {
+	grid-row: 5;
+}
+
+.main-search {	
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 15px 0 30px 0;
+}
+
+.input-search {
+	display: flex;	
+	height: 44px;	
+}
+.input-group {
+	position: relative;
+	width: 85%;
+}
+.input-group input{
+	width: 100%;
+    height: 100%;
+	box-sizing: border-box;
+	outline: 0;
+	border: 1px solid #a2a9b1;
+	border-radius: 2px 0 0 2px;
+	padding-left: 10px;
+	padding-right: 30px;
+}
+.input-group input:hover {
+	border-color: #72777d;
+}
+.input-group input:focus {
+	border-color: #36c;
+    box-shadow: inset 0 0 0 1px #36c;
+}
+
+.input-group button {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	border: 0;
+	outline: 0;
+	padding: 0 10px;
+	background: white;
+	margin: 5px;
+	color: #54595d;
+    font-size: 11px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.input-group button:hover {
+	background: #f2f2f2;
+}
+
+.input-group button i {
+	margin-left: 5px;
+}
+.btn-search {
+	width: 15%;
+	background: #36c;
+	color:white;
+	border: 0;
+	outline: 0;
+	font-size: 20px;
+	cursor: pointer;
+	transition: background .3s ease,color .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+
+.btn-search:hover {
+	background: #447ff5;
+    border-color: #447ff5;
+}
+
+.main-button {
+	text-align: center;
+}
+button {
+	cursor: pointer;
+}
+.main-button button {
+	background-color: #f8f9fa;
+	font-size: 15px;
+	color: #36c;
+	font-weight: 700;
+	border: 1px solid #a2a9b1;
+	border-radius: 2px;
+	outline: 16px solid #fff;
+	padding: 8px 16px;
+	display: flex;
+    align-items: center;
+	position: relative;
+	z-index: 1;
+}
+.main-button button img {	
+	width: 22px;
+    height: 22px;
+}
+.main-button button span {
+	margin: 0 10px;
+}
+
+.line {
+	background-color: #c8ccd1;
+    display: block;
+    position: relative;
+    max-width: 460px;
+    width: 80%;
+    /* margin: -16px auto 16px; */
+    margin: -16px auto 16px;
+    height: 1px;
+}
